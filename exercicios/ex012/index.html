@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video src="media/meu-video.mp4.mp4" width="200" controls></video>
+    <!--lembrando de colocar todos os modelos de compatibilidade para rodar certinho para todos os clientes e seus dispositivos. Para isso vamos fazer aqui também o ex02-->
+    <h2>Exemplo02</h2>
+    <video poster="imagens/capa-video.jpg" width="200" controls> <!--excluímos o src que é gerado automaticamente e criamos a tag source separado.-->
+        <!--usamos a atribuição poster para colocar uma foto de pause, ou capa, como queira. Toda vez que congela o vídeo ela aparece.-->
+        <source src="media/meu-video.mp4.mp4" type="video/mp4">
+        <!--simulamos que todos os tipos foram inseridos-->
+
+    </video>
+
+</body>
+</html>

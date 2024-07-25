@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture><!--O source deve ser sempre criando um acima do outro,no caso se começarmos pelo MAX WIDTH (foto maior)como o exemplo do professor, assim fica a ordem do SOURCE: p, m, g. Primeiro tenta carregar a maior, depois a média e por último a pequena.-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Aqui o professor orientou trocar de MIN para MÁX a largura.-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="media/music-infantil.mp3" controls autoplay></audio>
+    <!--Temos outros modelos de áudio: MP3, WAV, OGG por exemplo. Pois neste caso o AUTOPLAY não funcionou. Portanto devemos colocar em todos os formatos para evitar a incompatibilidade, da mesma forma como vimos nos vídeos. ABAIXO TENTAREMOS OUTRA MANEIRA.-->
+    <h2>Exemplo 02</h2>
+   <audio preload="metadata" autoplay controls loop> <!--retiramos o src da tag padrão e usamos a tag source sozinha.-->
+    <source src="media/music-infantil.mp3" type="audio/mpeg">
+    <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+        <a href="media/music-infantil.mp3">Clique aqui para baixar o arquivo MP3.</a>
+        <!--este parágrafo só irá aparecer caso não haja a compatibilidade com algum navegador, em nenhum dos formatos mencionados anteriormente.-->
+    </p>
+   </audio> 
+</body>
+</html>

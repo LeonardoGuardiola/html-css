@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* Abaixo o modelo simplificado de border (width, style e cor.) */
+
+            border: 10px solid darkslategray; 
+
+            padding: 10px;
+            /* 
+            Simplificado no sentido do Relógio para 4 valores: top, right, bottom, left. 
+            
+            Caso todas elas forem iguais, ou seja, tiverem o mesmo valor, basta colocar o valor 1 única vez que valerá para todos. 
+            
+            Agora, se dermos apenas 2 valores, o primeiro será considerado para top e bottom e o segundo para right e left.
+            */
+
+            margin: 20px auto 40px auto; /* Usei auto na right and left para centralizar.  */
+
+            outline: 5px dashed salmon; /* width, style and color. */ 
+
+            /* Para centralizar uma caixa usamos o elemento "auto". */
+        }
+
+        a {
+            border: 10px solid red;
+            
+            padding: 10px;
+        }
+    </style>
+    <!--Devtools é vida meu amigo!!! Bora simular tudo sobre contain, padding, border, margin e outline.-->
+
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a>Vamos ver como isso tudo funciona.</p>
+
+    <!--User agent = quer dizer que o navegador quem configurou automaticamente algum conteúdo da sua página para exibição.-->
+
+
+</body>
+</html>
