@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body{
+    background-color: rgb(199, 248, 159);
+
+}
+
+:root h1 {
+    text-align: center;
+    color: darkgreen;
+    padding: 5px;
+}
+
+
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, lightgreen, darkgreen);;
+    border: black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-around;
+    display: flex;
+    color: rgb(157, 247, 157);
+    padding-bottom: 5px;
+    color: rgb(15, 194, 75);
+
+    
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(15, 194, 75);
+    
+    
+}
+
+a:hover {
+    color: rgb(116, 255, 81);
+}
+
+nav {
+    background-color: darkgreen;
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+
+}
+
+/* Aqui não funcionou, tive que colocar inline style para centralizar */
+img {
+    width: 400px;
+    
+}
